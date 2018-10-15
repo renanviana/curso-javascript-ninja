@@ -6,9 +6,8 @@ var array = ['Renan', {nome: 'Viana', idade:22}, [1,2,3], function(){}, 28 ];
 Crie uma função chamada `addItem`, que irá adicionar itens no array criado.
 A função deverá retornar o array atualizado.
 */
-function addItem() {
-  array.push(1);
-  array.push({});
+function addItem(item) {
+  array.push(item);
   return array;  
 }
 /*
@@ -16,9 +15,8 @@ Adicione um novo array ao array criado no início do desafio, com ao menos 3
 itens de tipos diferentes, mostrando o resultado no console.
 */
 var array2 = ['Prop', {a:1}, [3,2,1]];
-array.push(array2);
+addItem(array2);
 console.log(array);
-console.log(array[array.length-1]);
 /*
 Mostre no console o segundo elemento desse último array, criado acima, com a
 frase:
